@@ -3,6 +3,7 @@ const app = express()
 const {connection} = require("./db")
 const { userRouter } = require("./Routes/Auth.route")
 const { empRouter } = require("./Routes/Emp.route")
+const mongoose = require("mongoose")
 const cors = require("cors")
 require("dotenv").config()
 const connectDB = async () => {
